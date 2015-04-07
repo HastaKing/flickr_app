@@ -1,0 +1,185 @@
+/**
+ | ---------------------------------------------------------------
+ | Workless by @iKreativ is a HTML, CSS and JS framework to get
+ | your projects of the ground as fast as possible.
+ |
+ | It is split into a number of seperate CSS & JS files which
+ | allows you to use as much, or as little as you please.
+ |
+ | You'll notice that this file contains the Base styles only
+ | then all other CSS is loaded seperately.
+ |
+ | This is not recommended.
+ |
+ | Once you've decided which components you are going to use, then
+ | simply copy/paste them all into a single CSS file to reduce HTTP
+ | requests!
+ | ---------------------------------------------------------------
+ */
+
+/**
+ * Apply box layout model to all elements
+ */
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/**
+ * HTML5 display definitions
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+	margin: 0 auto;
+}
+
+audio,
+canvas,
+video {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+[hidden] {
+	display: none;
+}
+
+figure {
+	margin: 0;
+}
+/**
+ * Base
+ */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+/**
+ * Embedded Content
+ */
+img {
+	-ms-interpolation-mode: bicubic;
+	vertical-align: middle;
+	border: 0;
+	outline: 0;
+}
+iframe {
+	border: none;
+}
+/* correct overflow not hidden in IE9 */
+svg:not(:root) {
+	overflow: hidden;
+}
+
+#search{
+	width: 300px;
+	margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding:10px;
+
+}
+
+.monImage{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for dialog window */
+#small-dialog {
+  background: white;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 400px;
+  margin: 40px auto;
+  position: relative;
+}
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+  opacity: 0;
+
+  -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: opacity 0.3s ease-out; 
+  -moz-transition: opacity 0.3s ease-out; 
+  -o-transition: opacity 0.3s ease-out; 
+  transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mix{
+  padding: 10px;
+}
+
+.mix:hover{
+  box-shadow: 0px 0px 10px #aaa;
+}
+
+.bg-debutlight {
+  background: url("backgrounds/bg_debutlight.png") repeat;
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Recherche d'images</title>
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/fotorama.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+		<script src="js/jquery.magnific-popup.js"></script>
+		<script src="js/my_script.js"></script>
+		<script src="js/fotorama.js"></script>
+  		<script src="js/jquery-ui.min.js"></script>
+	</head>
+	<body class="bg-debutlight">
+		<div class="modal" style="vertical-align:middle">
+			<span class="modal_close">&#215;</span>
+			<img src="css/smile_triste.png" width="300px" height="300px">
+			<h1 style="vertical-align:center;float:right;line-height:260px;">Pas d'images pour cette ville !</h1>
+		</div>
+		<div class="modalbg"></div>
+		<div>
+			<div id='search'>
+				Entrez une commune : <input id="commune" type="text" name="commune" class="green"> </br>
+				Entrez le nombre de photos à afficher : <select id="nbPhoto">
+															<option value="5">5</option>
+													  		<option value="10" selected>10</option>
+													  		<option value="20">20</option>
+													  	</select>
+				<p> Date minimal : <input type="text" class="green" id="datepicker"></p>
+				</br>
+				<input type="button" value="chercher !" href="#small-dialog" class="popup-with-move-anim" onclick="maFonction()">
+				<div id="switch">
+				</div>
+				<div id="tri">
+					<div class="sort label orange" data-sort="date:asc" style="width:100px;margin:auto;margin-top:5px;cursor:pointer">Tri par date</div>
+  					<div class="sort label green" data-sort="auth:asc" style="width:100px;margin:auto;margin-top:5px;cursor:pointer">Tri par auteur</div>
+  					<div class="sort label blue" data-sort="name:asc" style="width:100px;margin:auto;margin-top:5px;margin-bottom:5px;cursor:pointer">Tri par nom</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="images">
+			
+		</div>
+
+		<div id="carousel" style="margin:auto;box-shadow: 0px 0px 10px #aaa;display:none">
+			<div class="fotorama" data-width="100%" data-height="100%" style="padding:10px">
+
+			</div>
+        </div>
+	</body>
+</html>
